@@ -1,13 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BUD - Git tutorial</title>
 </head>
 
 <body>
-     <h1>Mastering GIT</h1>
-     <!-- do assignment here -->
+    <div class="container">
+        <h1>Mastering GIT</h1>
+        <!-- do assignment here -->
+        <div id="cli">
+            <h2>Basic CLI Commands</h2>
+            <ul>
+                <li>PWD: This command is use for printing your currentt working directory</li>
+                <li>CD: This command is use to navigate between directories</li>
+                <li>LS:This command is use to list files and folders in your current directory</li>
+                <li>Touch: This command is use to create new file</li>
+                <li>Mkdir: This command is use to create new directory</li>
+                <li>Rm: This command is use to delete a file</li>
+                <li>Rm-r: This command is use to delete directory and its entire content</li>
+                <li>Cp:This command is use to copy file from one directory to another</li>
+                <li>Clear:Use this command to clear your terminal</li>
+            </ul>
+        </div>
+        <div class="init">
+            <h2>Initializing a local Git reprository</h2>
+            <p>To get started usign Git, you dont necesarily jave to be a badass developer. TO initialize and start using Git right from your terminal, use the command <b>git init</b></p>
+        </div>
+        <div class="stc">
+            <h2>Staging and Comitis</h2>
+            <p>Staging is a step before the comit process in Git. Adding a file to the staging area simply means letting Git know(track) that those files are ready for comit. To add file to the staging area, simply use <b>git add ~file name~</b> . And to see files git is tracking simply sue <b>git status</b></p>
+            <p>Comits are snapshots or milestone of your projects along the timeline of Git. They are the basic building block of a vison control system. To commit a file,simply use <b>git commit-m "your message" and to see commits, use <b>git log</b></b></p>
+        </div>
+        <div class="branch">
+            <h2>Git Branches</h2>
+            <p>A branch is a version of a git reprository, that diverges from the main wowrking reprository. Branch allows you to move back and forth between diffrent stages of a project. To create and move to a new branch, use the command <b>git check-out-b ~branch name~</b></p>
+            <p>to see existing branch, run <b>git branch</b>. The default branch is usually master or main  if you are comfortable with the changes, switch to the default branch, then run command <b>git merge</b></p>
+        </div>
+        <div class="push">
+            <h2>Creating and Pushing To a Git Hub Reprositiry</h2>
+            <ul>
+                <li>Go to github and create a new Reprository.</li>
+                <li>You can either make the repro public or private depending on if you want to make it an open source or  not.</li>
+                <li>Initialize a readme by selecting <b>Add a read me file.</b></li>
+                <li>Click on the create reprository button.</li>
+                <li>Go back to the the terminal, connecet your reprisitory to your local git by using git remote add origin git-repro link.</li>
+                <li>Push to Git hub using <b>git push origin.</b></li>
+            </ul>
+        </div>
+        <div class="fork">
+            <h2>Forking and Cloning</h2>
+            <p>Forking is a Git hub operation ussed to clone a reprository and its content to your own Git hub account. This is usually used when you want to make an update to an existing repro i.e when you want to contribute to an oepn source</p>
+            <p>Cloning is a git operation used to clone a reprository and its content to your local macjine. To carry out this action, use the <b>git clone ~repro-name~</b></p>
+            <p>Cloning and Forking are similarbut while forking is done on your Git hub account, cloning is done using git. To merge changes made to a fork on the main repro, you wound need to open a pull request, but with cloning you can push directly to the upstream branch if you have write acess</p>
+        </div>
+        <div class="pull">
+            <h2>Pull Request</h2>
+            <p>a pull request (or PR) is a way to alert a repro's owner that you want to make some changes to their code. It allows them to review the code and make sure it looks good before putting your changes on the primary branch</p>
+        </div>
+ </div>
+   https://www.freecodecamp.org/news/how to write-a-good-readme-file/
+<div style="margin-top: 50px;"></div>
 </body>
 </html>
